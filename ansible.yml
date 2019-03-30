@@ -1,0 +1,10 @@
+---
+ - hosts: client.study.com
+   user: root
+   tasks:
+    - name: Copy repo file
+	  copy: src=mvn/target/shopizer.jar dest=/WEB-INF/lib/shopizer.jar
+	- name: start tomcat
+	  service: name=tomcat state=started
+
+---      

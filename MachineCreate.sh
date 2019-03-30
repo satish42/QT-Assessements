@@ -1,0 +1,1 @@
+create-instance --ami-id ami-0e9ff8f77b5313932  --instance-type t2.micro --os "Amazon Linux" --ssh-key-name apache --availability-zone us-west-2
